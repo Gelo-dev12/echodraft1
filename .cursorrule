@@ -1,0 +1,59 @@
+## Scratchpad
+
+[X] 1. Project Setup
+    - [X] Initialize Next.js 15 app with TypeScript, Tailwind, and app directory
+    - [X] Install and configure Shadcn UI, Lucide icons, Zod, Zustand
+    - [X] Set up Prettier, ESLint, Husky, lint-staged
+    - [X] Configure absolute imports/aliases
+
+[ ] 2. Database & Auth
+    - [ ] Set up Prisma with PostgreSQL (local/dev and production)
+    - [ ] Define user, script, and subscription models
+    - [ ] Integrate next-auth@beta (email/password, OAuth, social logins)
+    - [ ] Add Clerk/Auth0 as alternative (optional)
+
+[ ] 3. Core Features
+    - [ ] Voice Capture: Implement browser-based audio recording (MediaRecorder API)
+    - [ ] Transcription: Integrate Whisper API (or AssemblyAI) for speech-to-text
+    - [ ] Summarization & Scripting: Use OpenAI API to summarize and generate video scripts (intro, body, outro)
+    - [ ] Visual Directions: Generate scene/b-roll/animation suggestions (OpenAI prompt engineering)
+    - [ ] Voice-over: Integrate ElevenLabs for TTS export (optional)
+    - [ ] Script Export: PDF, TXT, Final Cut Pro template export
+    - [ ] Script Pack Download/Save
+    - [ ] Uploadthing for user uploads (e.g., reference files)
+
+[ ] 4. UI/UX
+    - [ ] Build dashboard (script history, usage, account)
+    - [ ] Script editor/viewer with visual direction sidebar
+    - [ ] Integrate Shadcn UI components and Lucide icons
+    - [ ] Responsive/mobile-first design
+    - [ ] Onboarding and help modals
+
+[ ] 5. Payments & Plans
+    - [ ] Integrate Stripe for subscriptions, one-time credits, and team plans
+    - [ ] Freemium logic: 3 scripts/month free, $9.99/mo unlimited, $5/5 scripts, team/agency plans
+    - [ ] Usage metering and limits (Zustand/Prisma)
+
+[ ] 6. Notifications & Email
+    - [ ] Integrate Resend for transactional emails (welcome, receipts, password reset)
+    - [ ] In-app notifications (toasts, banners)
+
+[ ] 7. Internationalization & Templates
+    - [ ] Tagalog version for Filipino creators
+    - [ ] Script templates: vlogs, reviews, TikTok, etc.
+
+[ ] 8. Integrations & Marketplace (Phase 2+)
+    - [ ] AI-generated thumbnails/captions
+    - [ ] Integrate with Notion, CapCut, YouTube API
+    - [ ] Build a script marketplace for creators
+
+[ ] 9. Deployment & Monitoring
+    - [ ] Vercel deployment (env setup, preview/staging/prod)
+    - [ ] Set up logging, error tracking (Sentry, LogRocket)
+    - [ ] Analytics (Plausible, PostHog, or similar)
+
+[ ] 10. QA & Launch
+    - [ ] E2E and unit tests (Playwright, Jest, React Testing Library)
+    - [ ] Accessibility and performance audits
+    - [ ] Beta launch, feedback, iteration
+    - [ ] Public launch
