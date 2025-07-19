@@ -22,16 +22,16 @@
     - [X] Script Pack Download/Save
     - [X] Uploadthing for user uploads (e.g., reference files)
 
-[ ] 4. UI/UX
-    - [ ] Build dashboard (script history, usage, account)
-    - [ ] Script editor/viewer with visual direction sidebar
-    - [ ] Integrate Shadcn UI components and Lucide icons
-    - [ ] Responsive/mobile-first design
-    - [ ] Onboarding and help modals
+[X] 4. UI/UX
+    - [X] Build dashboard (script history, usage, account)
+    - [X] Script editor/viewer with visual direction sidebar
+    - [X] Integrate Shadcn UI components and Lucide icons
+    - [X] Responsive/mobile-first design
+    - [X] Onboarding and help modals
 
 [ ] 5. Payments & Plans
     - [ ] Integrate Stripe for subscriptions, one-time credits, and team plans
-    - [ ] Freemium logic: 3 scripts/month free, $9.99/mo unlimited, $5/5 scripts, team/agency plans
+    - [ ] Freemium logic: 3 scripts/month free, $20/mo unlimited, $5/5 scripts, team/agency plans
     - [ ] Usage metering and limits (Zustand/Prisma)
 
 [ ] 6. Notifications & Email
