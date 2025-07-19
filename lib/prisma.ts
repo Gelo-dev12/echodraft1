@@ -1,3 +1,4 @@
+// Prisma singleton pattern for Next.js API routes.
 import { PrismaClient } from '@prisma/client';
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
