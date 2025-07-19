@@ -13,7 +13,7 @@
     - [ ] Add Clerk/Auth0 as alternative (optional)
 
 [ ] 3. Core Features
-    - [ ] Voice Capture: Implement browser-based audio recording (MediaRecorder API)
+    - [X] Voice Capture: Implement browser-based audio recording (MediaRecorder API)
     - [ ] Transcription: Integrate Whisper API (or AssemblyAI) for speech-to-text
     - [ ] Summarization & Scripting: Use OpenAI API to summarize and generate video scripts (intro, body, outro)
     - [ ] Visual Directions: Generate scene/b-roll/animation suggestions (OpenAI prompt engineering)
