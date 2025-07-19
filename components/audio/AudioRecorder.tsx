@@ -1,3 +1,4 @@
+// Main audio recorder component for Voice-to-Video Script Coach
 "use client";
 import React, { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
