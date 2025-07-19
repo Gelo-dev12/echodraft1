@@ -20,6 +20,7 @@ export default function LandingPage() {
           <Link href="/" className="hover:text-purple-400 transition-colors">Home</Link>
           <Link href="/studio" className="hover:text-purple-400 transition-colors">Studio</Link>
           <Link href="/dashboard" className="hover:text-purple-400 transition-colors">Dashboard</Link>
+          <Link href="/pricing" className="hover:text-purple-400 transition-colors">Pricing</Link>
           <Link href="/login">
             <Button variant="secondary" size="lg" className="bg-gradient-to-br from-purple-600 to-blue-500 text-white border-none shadow-lg hover:from-purple-700 hover:to-blue-600 px-6 py-2 text-lg font-bold">Sign In</Button>
           </Link>

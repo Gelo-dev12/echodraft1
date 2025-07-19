@@ -30,8 +30,8 @@
     - [X] Onboarding and help modals
 
 [ ] 5. Payments & Plans
-    - [ ] Integrate Stripe for subscriptions, one-time credits, and team plans
-    - [ ] Freemium logic: 3 scripts/month free, $20/mo unlimited, $5/5 scripts, team/agency plans
+    - [X] Integrate Paypal for subscriptions, one-time credits, and team plans
+    - [ ] Freemium logic: 3 scripts/month free, $10/mo unlimited, $5/5 scripts, team/agency plans
     - [ ] Usage metering and limits (Zustand/Prisma)
 
 [ ] 6. Notifications & Email
