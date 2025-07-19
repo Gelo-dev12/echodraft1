@@ -12,15 +12,15 @@
     - [X] Integrate next-auth@beta (email/password, OAuth, social logins)
     - [ ] Add Clerk/Auth0 as alternative (optional)
 
-[ ] 3. Core Features
+[X] 3. Core Features
     - [X] Voice Capture: Implement browser-based audio recording (MediaRecorder API)
-    - [ ] Transcription: Integrate Whisper API (or AssemblyAI) for speech-to-text
-    - [ ] Summarization & Scripting: Use OpenAI API to summarize and generate video scripts (intro, body, outro)
-    - [ ] Visual Directions: Generate scene/b-roll/animation suggestions (OpenAI prompt engineering)
-    - [ ] Voice-over: Integrate ElevenLabs for TTS export (optional)
-    - [ ] Script Export: PDF, TXT, Final Cut Pro template export
-    - [ ] Script Pack Download/Save
-    - [ ] Uploadthing for user uploads (e.g., reference files)
+    - [X] Transcription: Integrate Whisper API (or AssemblyAI) for speech-to-text
+    - [X] Summarization & Scripting: Use OpenAI API to summarize and generate video scripts (intro, body, outro)
+    - [X] Visual Directions: Generate scene/b-roll/animation suggestions (OpenAI prompt engineering)
+    - [X] Voice-over: Integrate ElevenLabs for TTS export (optional)
+    - [X] Script Export: PDF, TXT, Final Cut Pro template export
+    - [X] Script Pack Download/Save
+    - [X] Uploadthing for user uploads (e.g., reference files)
 
 [ ] 4. UI/UX
     - [ ] Build dashboard (script history, usage, account)
