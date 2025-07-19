@@ -6,10 +6,10 @@
     - [X] Set up Prettier, ESLint, Husky, lint-staged
     - [X] Configure absolute imports/aliases
 
-[ ] 2. Database & Auth
-    - [ ] Set up Prisma with PostgreSQL (local/dev and production)
-    - [ ] Define user, script, and subscription models
-    - [ ] Integrate next-auth@beta (email/password, OAuth, social logins)
+[X] 2. Database & Auth
+    - [X] Set up Prisma with PostgreSQL (local/dev and production)
+    - [X] Define user, script, and subscription models
+    - [X] Integrate next-auth@beta (email/password, OAuth, social logins)
     - [ ] Add Clerk/Auth0 as alternative (optional)
 
 [ ] 3. Core Features
