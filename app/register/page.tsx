@@ -2,23 +2,25 @@
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
 
-  async function handleLogin(e: React.FormEvent) {
+  async function handleRegister(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setSuccess(false);
     try {
-      const res = await fetch("/api/auth/login", {
+      const res = await fetch("/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password, name }),
       });
       const text = await res.text();
       let data;
@@ -28,9 +30,11 @@ export default function LoginPage() {
         setError("Server error: " + text);
         return;
       }
-      if (!res.ok) throw new Error(data.error || "Login failed");
-      localStorage.setItem("token", data.token);
-      window.location.href = "/dashboard";
+      if (!res.ok) throw new Error(data.error || "Registration failed");
+      setSuccess(true);
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 1200);
     } catch (e: any) {
       setError(e.message || "Unknown error");
     } finally {
@@ -40,8 +44,15 @@ export default function LoginPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <form onSubmit={handleLogin} className="w-full max-w-sm bg-white rounded-lg shadow p-6 space-y-4">
-        <h1 className="text-2xl font-bold mb-2 text-center">Login</h1>
+      <form onSubmit={handleRegister} className="w-full max-w-sm bg-white rounded-lg shadow p-6 space-y-4">
+        <h1 className="text-2xl font-bold mb-2 text-center">Register</h1>
+        <Input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          required
+        />
         <Input
           type="email"
           placeholder="Email"
@@ -57,12 +68,10 @@ export default function LoginPage() {
           required
         />
         {error && <div className="text-red-500 text-sm text-center">{error}</div>}
+        {success && <div className="text-green-600 text-sm text-center">Registration successful! Redirecting to login...</div>}
         <Button type="submit" className="w-full" disabled={loading}>
-          {loading ? "Logging in..." : "Login"}
+          {loading ? "Registering..." : "Register"}
         </Button>
-        <div className="text-center text-sm mt-2">
-          Don&apos;t have an account? <Link href="/register" className="text-blue-600 underline">Register</Link>
-        </div>
       </form>
     </div>
   );
